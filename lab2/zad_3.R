@@ -13,7 +13,7 @@ split_into_intervals <- function(vec_to_split, interval_sizes) {
         vec_to_split,
         cut(seq_along(vec_to_split), breakpoints * length(vec_to_split))
     )
-    
+
     names(list_of_intervals) <- seq_along(list_of_intervals)
     return(list_of_intervals)
 }
